@@ -10,6 +10,7 @@ import 'package:flutter_app/models/book.dart';
 import 'package:flutter_app/screens/home/book_list.dart';
 import 'package:flutter_app/screens/authenticate/pictlogin_scraper.dart';
 import 'package:flutter_app/services/firebasemessaging.dart';
+import 'package:flutter_app/screens/home/searchbook.dart';
 
 class Home extends StatelessWidget {
   
@@ -43,7 +44,8 @@ class Home extends StatelessWidget {
         body: TabBarView(
           children: <Widget>[
             BookList(),
-            PictLogin(),
+            SearchBook(),
+            //PictLogin(),
 //             FirebaseMessagingNotif(),
             //Text("Other one Selected", style: TextStyle(color: Colors.white),),
           ],
